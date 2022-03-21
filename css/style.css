@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+    min-width: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* coloriando los backgrounds de las clases de distintos colores*/
+.header {
+    background: cornflowerblue;
+}
+
+.main {
+    background: #fff;
+}
+
+.aside {
+    background: deeppink;
+}
+
+.sinopsis {
+    background: lightgreen;
+}
+
+.personajes {
+    background: lightgrey;
+}
+
+.locaciones {
+    background: lightblue;
+}
+
+.footer {
+    background: #333;
+}
+
+
+
