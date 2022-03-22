@@ -1,0 +1,23 @@
+.main .sinopsis .sinopsis-container {
+    flex-direction: row;
+}
+
+.main .sinopsis .sinopsis-container .poster {
+    display: flex;
+    justify-content: center;
+    order: 0;
+    width: 50%;
+}
+
+.main .sinopsis .sinopsis-container .poster img {
+    height: 380px;
+}
+
+.main .sinopsis .sinopsis-container .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 1;
+    width: 48%;
+    margin-right: 2%;
+}

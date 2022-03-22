@@ -1,9 +1,8 @@
 :root {
     --primary-color: #041026;
-    --secondary-color: #35428C;
-    --tertiary-color: #73265E;
-    --font-color: #A0A3D9;
-
+    --secondary-color: #35428c;
+    --tertiary-color: #73265e;
+    --font-color: #a0a3d9;
 }
 
 * {
@@ -37,7 +36,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-
 /* coloriando los backgrounds de las clases de distintos colores*/
 .header {
     background-color: var(--primary-color);
@@ -56,17 +54,16 @@ h2 {
 }
 
 .personajes {
-    background-color: #01261C;
+    background-color: #01261c;
 }
 
 .locaciones {
-    background-color: #D91414;
+    background-color: #d91414;
 }
 
 .footer {
     background-color: #333;
 }
-
 
 /* redimensionando los bloques */
 .header,
@@ -86,7 +83,6 @@ h2 {
     height: auto;
 }
 
-
 /* redimensionando logo */
 .header {
     height: auto;
@@ -104,13 +100,11 @@ h2 {
     margin: 0.3rem 0;
 }
 
-
 /* arreglando el aside */
 .main .aside {
     display: flex;
-    gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     height: auto;
 
     /* agregandole la capacidad de seguirte */
@@ -126,7 +120,6 @@ h2 {
     font-size: 1.6rem;
 }
 
-
 /* arreglando la sinopsis */
 .main .sinopsis {
     height: auto;
@@ -137,7 +130,8 @@ h2 {
     flex-wrap: wrap;
     flex-direction: column;
     height: auto;
-    margin: 1rem 0;
+    margin-top: 2%;
+    margin-bottom: 1rem;
     align-items: center;
 }
 
@@ -150,7 +144,6 @@ h2 {
     text-align: center;
 }
 
-
 /* arreglando los personajes */
 .main .personajes {
     height: auto;
@@ -160,6 +153,10 @@ h2 {
     height: auto;
     margin: 2% 0;
     text-align: center;
+}
+
+.main .personajes .personajes-container .title {
+    margin-bottom: 1rem;
 }
 
 .main .personajes .personajes-container .cards {
@@ -179,9 +176,9 @@ h2 {
     height: auto;
     width: 30rem;
     align-items: center;
-    background-color: #05A688;
+    background-color: #05a688;
     border-radius: 5px;
-    color: #a3f0e8
+    color: #a3f0e8;
 }
 
 .main .personajes .personajes-container .cards .character-card img {
@@ -190,7 +187,6 @@ h2 {
     border-radius: 5px;
 }
 
-
 /* arreglando las locaciones */
 .main .locaciones {
     height: auto;
@@ -198,7 +194,11 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    color: #F2B807;
+    color: #f2b807;
+}
+
+.main .locaciones h2 {
+    margin-top: 2%;
 }
 
 .main .locaciones .locaciones-container {

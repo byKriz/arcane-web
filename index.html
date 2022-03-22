@@ -6,6 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+            rel="stylesheet"
+            href="./css/tablet.css"
+            media="screen and (min-width: 600px)"
+        />
+        <link
+            rel="stylesheet"
+            href="./css/desktop.css"
+            media="screen and (min-width: 800px)"
+        />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Roboto+Mono:wght@400;700&display=swap"
@@ -21,12 +31,12 @@
     </header>
     <main class="main">
         <aside class="aside">
-            <a href="#">Sinopsis</a>
-            <a href="#">Personajes</a>
-            <a href="#">locaciones</a>
-            <a href="#">Redes</a>
+            <a href="#sinopsis">Sinopsis</a>
+            <a href="#personajes">Personajes</a>
+            <a href="#locaciones">locaciones</a>
+            <a href="#footer">Redes</a>
         </aside>
-        <div class="sinopsis">
+        <div class="sinopsis" id="sinopsis">
             <div class="sinopsis-container">
                 <div class="poster">
                     <img src="./img/Arcane_-_Poster.png" alt="arcane poster" />
@@ -53,7 +63,7 @@
                 </div>
             </div>
         </div>
-        <div class="personajes">
+        <div class="personajes" id="personajes">
             <div class="personajes-container">
                 <h2 class="title">Personajes</h2>
                 <div class="cards">
@@ -70,25 +80,29 @@
                         <h2 class="character-name">Caitlyn</h2>
                     </div>
                     <div class="character-card">
-                        <img src="" alt="Jayce" />
+                        <img src="./img/personajes/jayce4.png" alt="Jayce" />
                         <h2 class="character-name">Jayce</h2>
                     </div>
                     <div class="character-card">
-                        <img src="" alt="Silco" />
+                        <img src="./img/personajes/viktor4.png" alt="Viktor" />
+                        <h2 class="character-name">Viktor</h2>
+                    </div>
+                    <div class="character-card">
+                        <img src="./img/personajes/silco4.png" alt="Silco" />
                         <h2 class="character-name">Silco</h2>
                     </div>
                     <div class="character-card">
-                        <img src="" alt="Vander" />
+                        <img src="./img/personajes/vander4.png" alt="Si realmente es vander XD" />
                         <h2 class="character-name">Vander</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="locaciones">
+        <div class="locaciones" id="locaciones">
             <h2>Locaciones</h2>
             <div class="locaciones-container">
                 <div class="locacion-card">
-                    <img src="./img/locaciones/piltover-zindeloruneterra.jpg" alt="Piltover" />
+                    <img src="./img/locaciones/piltover-zindeloruneterra.jpg" alt="Piltover" class="locacion-img"/>
                     <div class="locacion-texto">
                         <h2 class="locacion-name">Piltover</h2>
                         <p class="location-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -98,7 +112,7 @@
                     </div>
                 </div>
                 <div class="locacion-card">
-                    <img src="./img/locaciones/zaun_splash.jpeg" alt="Zaun" />
+                    <img src="./img/locaciones/zaun_splash.jpeg" alt="Zaun" class="locacion-img"/>
                     <div class="locacion-texto">
                         <h2 class="locacion-name">Zaun</h2>
                         <p class="location-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
@@ -109,7 +123,7 @@
 
             </div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <h2>Footer</h2>
     </footer>
 </body>
