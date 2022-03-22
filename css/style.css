@@ -1,3 +1,11 @@
+:root {
+    --primary-color: #041026;
+    --secondary-color: #35428C;
+    --tertiary-color: #73265E;
+    --font-color: #A0A3D9;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -12,7 +20,7 @@ body {
     font-family: "Open Sans", sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: #333;
+    color: var(--font-color);
     background: #fff;
     min-width: 320px;
     display: flex;
@@ -20,39 +28,45 @@ body {
     flex-direction: column;
 }
 
+h2 {
+    text-transform: uppercase;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
 }
 
+
 /* coloriando los backgrounds de las clases de distintos colores*/
 .header {
-    background: #041026;
+    background-color: var(--primary-color);
 }
 
 .main {
-    background: #fff;
+    background-color: #fff;
 }
 
 .aside {
-    background: #35428c;
+    background-color: var(--secondary-color);
 }
 
 .sinopsis {
-    background: lightgreen;
+    background-color: var(--tertiary-color);
 }
 
 .personajes {
-    background: lightgrey;
+    background-color: #01261C;
 }
 
 .locaciones {
-    background: lightblue;
+    background-color: #D91414;
 }
 
 .footer {
-    background: #333;
+    background-color: #333;
 }
+
 
 /* redimensionando los bloques */
 .header,
@@ -72,6 +86,7 @@ body {
     height: auto;
 }
 
+
 /* redimensionando logo */
 .header {
     height: auto;
@@ -89,6 +104,7 @@ body {
     margin: 0.3rem 0;
 }
 
+
 /* arreglando el aside */
 .main .aside {
     display: flex;
@@ -104,10 +120,12 @@ body {
 }
 
 .main .aside a {
-    color: #a0a3d9;
+    color: var(--font-color);
+    font-weight: bold;
     text-decoration: none;
     font-size: 1.6rem;
 }
+
 
 /* arreglando la sinopsis */
 .main .sinopsis {
@@ -131,6 +149,7 @@ body {
 .main .sinopsis .sinopsis-container .texto {
     text-align: center;
 }
+
 
 /* arreglando los personajes */
 .main .personajes {
@@ -160,8 +179,9 @@ body {
     height: auto;
     width: 30rem;
     align-items: center;
-    background: darkgoldenrod;
+    background-color: #05A688;
     border-radius: 5px;
+    color: #a3f0e8
 }
 
 .main .personajes .personajes-container .cards .character-card img {
@@ -170,14 +190,15 @@ body {
     border-radius: 5px;
 }
 
-/* arreglando las locaciones */
 
+/* arreglando las locaciones */
 .main .locaciones {
     height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    color: #F2B807;
 }
 
 .main .locaciones .locaciones-container {
