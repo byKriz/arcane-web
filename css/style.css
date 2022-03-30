@@ -125,3 +125,16 @@ h2 {
     background: rgb(30,32,28);
 }
 
+.main .sinopsis-container {
+    z-index: 888;
+}
+
+.main .sinopsis-container .texto h2 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.main .sinopsis-container .texto p {
+    margin-bottom: 65px;
+}
