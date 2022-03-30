@@ -16,168 +16,112 @@ html {
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 1.6;
-    color: var(--font-color);
+    color: white;
     background: #fff;
     min-width: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
 }
 
 h2 {
     text-transform: uppercase;
 }
 
-.main {
-    display: flex;
-    flex-wrap: wrap;
-}
 
-/* coloriando los backgrounds de las clases de distintos colores*/
+/* arreglando el header */
 .header {
-    background-color: var(--primary-color);
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
 }
-
-.main {
-    background-color: #fff;
-}
-
-.aside {
-    background-color: var(--secondary-color);
-}
-
-.sinopsis {
-    background-color: var(--tertiary-color);
-}
-
-.personajes {
-    background-color: #01261c;
-}
-
-.locaciones {
-    background-color: #d91414;
-}
-
-.footer {
-    background-color: #333;
-}
-
-
-.header .logo a, .header .nav-container a{
+.header .logo a, .header .nav-container .nav-items a{
     text-decoration: none;
+    color: white;
+}
+
+.header .logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header .nav-container {
+    position: relative;
+}
+
+.header .nav-container .nav-items a {
+    position: relative;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 30px;
+}
+
+/* aplicando psudoclases */
+/* crenado el subrayado dinamico */
+.header .nav-container .nav-items a:before {
+    /* crenado el subrayado */
+    content: '';
+    position: absolute;
+    background: white;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s ease; /* animacion de la linea */
+
+}
+
+.header .nav-container .nav-items a:hover:before {
+    /* resultado final de la linea */
+    width: 100%;
+}
+
+/* arreglando el main */
+.main {
+    padding: 100px 100px;
 }
 
 
-/* arreglando la sinopsis */
+/* arreglando el contenido */
 .main .sinopsis {
     height: auto;
 }
 
-.main .sinopsis .sinopsis-container {
+.main .sinopsis-container {
     display: flex;
     flex-wrap: wrap;
+    /* flex-direction: column; */
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main .sinopsis-container .poster img {
+    height: 350px;
+    border-radius: 5px;
+}
+
+.main .sinopsis-container .texto {
+    text-align: center;
+    width: 50%;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
-    height: auto;
-    margin-top: 2%;
-    margin-bottom: 1rem;
-    align-items: center;
+    background: rgb(30,32,28);
 }
 
-.main .sinopsis .sinopsis-container .poster img {
-    height: 300px;
-    border-radius: 5px;
-}
-
-.main .sinopsis .sinopsis-container .texto {
-    text-align: center;
-}
-
-/* arreglando los personajes */
-.main .personajes {
-    height: auto;
-}
-
-.main .personajes .personajes-container {
-    height: auto;
-    margin: 2% 0;
-    text-align: center;
-}
-
-.main .personajes .personajes-container .title {
-    margin-bottom: 1rem;
-}
-
-.main .personajes .personajes-container .cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    gap: 1.5rem;
-}
-
-.main .personajes .personajes-container .cards .character-card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: auto;
-    width: 30rem;
-    align-items: center;
-    background-color: #05a688;
-    border-radius: 5px;
-    color: #a3f0e8;
-}
-
-.main .personajes .personajes-container .cards .character-card img {
-    height: 250px;
-    margin-top: 8%;
-    border-radius: 5px;
-}
-
-/* arreglando las locaciones */
-.main .locaciones {
-    height: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    color: #f2b807;
-}
-
-.main .locaciones h2 {
-    margin-top: 2%;
-}
-
-.main .locaciones .locaciones-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    gap: 1.5rem;
-    margin: 1rem 0;
-}
-
-.main .locaciones .locaciones-container .locacion-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
-}
-
-.main .locaciones .locaciones-container .locacion-card img {
-    height: 200px;
-    /* margin: 0.5rem 0; */
-    border-radius: 5px;
-}
-
-/* arreglando el footer */
-.footer {
-    height: auto;
-    color: white;
-}
