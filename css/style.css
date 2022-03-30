@@ -165,11 +165,6 @@ h2 {
     .header .nav-container {
         display: none;
     }
-
-    .main .sinopsis-container {
-        order: 1;
-    }
-
     .menu-btn {
         background: url(../img/icons/toggle-menu-icon-png-8-Transparent-Images.png) no-repeat;
         background-size: 30px;
@@ -179,6 +174,21 @@ h2 {
         cursor: pointer;
         transition: 0.3s ease;
     }
+
+    .main {
+        padding: 100px 100px 50px 100px;
+    }
+
+    .main .sinopsis-container .poster {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main .sinopsis-container .texto {
+        width: 80%;
+    }
+
 }
 
 @media (min-width: 800px) {
@@ -197,6 +207,19 @@ h2 {
     .main {
         padding: 100px 20px;
     }
+
+
+    .main .sinopsis-container .poster {
+        width: 50%;
+        display: block;
+        order:0;
+    }
+
+    .main .sinopsis-container .texto {
+        width: 50%;
+        order: 0;
+    }
+
 
     .main .sinopsis-container .poster img {
         height: 450px;
