@@ -210,13 +210,14 @@ h2 {
 
 
     .main .sinopsis-container .poster {
-        width: 50%;
-        display: block;
+        width: 40%;
+        display: flex;
+        justify-content: center;
         order:0;
     }
 
     .main .sinopsis-container .texto {
-        width: 50%;
+        width: 40%;
         order: 0;
     }
 
