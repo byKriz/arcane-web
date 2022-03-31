@@ -261,6 +261,10 @@ h1 {
         padding: 100px 100px 50px 100px;
     }
 
+    .main .sinopsis-container {
+        gap: 20px;
+    }
+
     .main .sinopsis-container .poster {
         width: 100%;
         display: flex;
