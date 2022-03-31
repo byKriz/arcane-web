@@ -188,7 +188,7 @@ h1 {
 }
 
 /* agregando los media queries */
-@media (max-width: 799px) {
+@media (min-width: 320px) and (max-width: 799px) {
 
     .header {
         padding: 15px 20px;
