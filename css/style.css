@@ -24,7 +24,7 @@ body {
     min-width: 320px;
 }
 
-h2 {
+h1 {
     text-transform: uppercase;
 }
 
@@ -110,6 +110,8 @@ h2 {
 .main .sinopsis-container .texto {
     text-align: center;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .main {
@@ -138,15 +140,20 @@ h2 {
     z-index: 888;
 }
 
-.main .sinopsis-container .texto h2 {
+.main .sinopsis-container .texto .title h1 {
     font-size: 5rem;
     font-weight: 900;
+    letter-spacing: 5px;
+    line-height: 40px;
     margin-bottom: 10px;
 }
 
-.main .sinopsis-container .texto p {
-    margin-bottom: 65px;
+.main .sinopsis-container .texto .title h1 span{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 10px;
 }
+
 
 /* arreglando los iconos */
 .main .media-icons {
@@ -268,7 +275,7 @@ h2 {
     }
 
     .main .media-icons {
-        bottom: 15px;
+        bottom: 8px;
         right: 50%;
     }
 
@@ -276,7 +283,7 @@ h2 {
 
 @media (min-width: 800px) {
     .header {
-        padding: 6px 20px;
+        padding: 3px 20px;
     }
 
     .menu-btn {
