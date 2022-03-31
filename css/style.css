@@ -188,17 +188,6 @@ h1 {
 }
 
 /* agregando los media queries */
-@media (max-width: 450px) {
-
-    .main .sinopsis-container .texto .title h1 {
-        font-size: 3rem;
-    }
-
-    .main .sinopsis-container .texto .title h1 span {
-        font-size: 1rem;
-    }	
-}
-
 @media (max-width: 799px) {
 
     .header {
@@ -269,7 +258,7 @@ h1 {
     }
 
     .main {
-        padding: 100px 100px 50px 100px;
+        padding: 100px 20px 50px 20px;
     }
 
     .main .sinopsis-container {
