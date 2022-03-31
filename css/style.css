@@ -267,7 +267,10 @@ h2 {
         justify-content: center;
     }
 
-
+    .main .media-icons {
+        bottom: 15px;
+        right: 50%;
+    }
 
 }
 
@@ -309,6 +312,7 @@ h2 {
 
     .main .media-icons {
         right: 15px;
+        bottom: 50%;
     }
 
     
