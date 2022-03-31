@@ -198,6 +198,7 @@ h1 {
 
     }
 
+    /* fondo azul cunado se activa el menu */
     .header .nav-container.active {
         position: fixed;
         width: 100%;
