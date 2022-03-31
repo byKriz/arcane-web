@@ -221,7 +221,7 @@ h1 {
         background: black;
         height: 3px;
     }
-
+    /* caja de los elementos del nav */
     .header .nav-container.active .nav-items {
         background: white;
         min-width: 320px;
@@ -250,7 +250,7 @@ h1 {
     /* interaccion con el menu usando js */
     .menu-btn.active {
         z-index: 999;
-        /* esta seria la confuguracion si tuvierauna imagen de cierre de menu */
+        /* esta seria la confuguracion de cierre de menu */
         background: url(../img/icons/x-icon.png) no-repeat;
         background-size: 25px;
         background-position: center;
